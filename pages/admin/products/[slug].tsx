@@ -299,7 +299,7 @@ const ProductAdminPage:FC<Props> = ({ product }) => {
                             helperText="Presiona [spacebar] para agregar"
                             value={ newTagValue}
                             onChange={ ({target} ) => setNewTagValue(target.value)}
-                            onKeyUp={( {code}) => code === 'Space' ? onNewTag() : undefined}
+                            onKeyUp={( {code}) => code === 'Space' ? onNewTag(code) : undefined}
                         />
                         
                         <Box sx={{
